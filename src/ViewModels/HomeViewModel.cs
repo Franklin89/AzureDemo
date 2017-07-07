@@ -11,7 +11,7 @@ namespace AzureDemo.ViewModels
         public HomeViewModel()
         {
             Title = "Shupi Countdown";
-            NextShowDateUtc = new DateTime(2017, 07, 14, 21, 40, 0, DateTimeKind.Local).ToUniversalTime();
+            NextShowDateUtc = new DateTime(2017, 07, 14, 19, 40, 0, DateTimeKind.Utc);
         }
     }
 }
