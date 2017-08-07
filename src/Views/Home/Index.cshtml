@@ -14,15 +14,15 @@
         </div>
         <div class="next-episode text-center">
                 <div id="nextShowDetails"
-                        data-utc-year="@Model.NextShowDateUtc.Year"
-                        data-utc-month="@(Model.NextShowDateUtc.Month-1)"
-                        data-utc-day="@Model.NextShowDateUtc.Day"
-                        data-utc-hour="@Model.NextShowDateUtc.Hour"
-                        data-utc-min="@Model.NextShowDateUtc.Minute">
+                        data-utc-year="@Model.NextVisitDateUtc.Year"
+                        data-utc-month="@(Model.NextVisitDateUtc.Month-1)"
+                        data-utc-day="@Model.NextVisitDateUtc.Day"
+                        data-utc-hour="@Model.NextVisitDateUtc.Hour"
+                        data-utc-min="@Model.NextVisitDateUtc.Minute">
                     <h2>Next visit</h2>
                     <h2>
                         <strong data-part="showTime" class="hidden">
-                            @Model.NextShowDateUtc.ToString("u")
+                            @Model.NextVisitDateUtc.ToString("u")
                         </strong>
                     </h2>
                     <h2>
