@@ -13,24 +13,6 @@
             </h1>
         </div>
         <div class="next-episode text-center">
-                <div id="nextShowDetails"
-                        data-utc-year="@Model.NextVisitDateUtc.Year"
-                        data-utc-month="@(Model.NextVisitDateUtc.Month-1)"
-                        data-utc-day="@Model.NextVisitDateUtc.Day"
-                        data-utc-hour="@Model.NextVisitDateUtc.Hour"
-                        data-utc-min="@Model.NextVisitDateUtc.Minute">
-                    <h2>Next visit</h2>
-                    <h2>
-                        <strong data-part="showTime" class="hidden">
-                            @Model.NextVisitDateUtc.ToString("u")
-                        </strong>
-                    </h2>
-                    <h2>
-                        <span data-part="countdown"></span>
-                    </h2>
-                </div>
-        </div>
-        <div class="next-episode text-center">
                 <div id="endDetails"
                         data-utc-year="@Model.EndOfStayDateUtc.Year"
                         data-utc-month="@(Model.EndOfStayDateUtc.Month-1)"
@@ -54,7 +36,6 @@
 @section Scripts {
     <script>
         (function () {
-            window.siteJs.setNextShowDetails("nextShowDetails");
             window.siteJs.setNextShowDetails("endDetails");
         })();
     </script>
